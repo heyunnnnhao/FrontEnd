@@ -1,0 +1,275 @@
+/* general */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(118, 115, 115);
+}
+
+body, div, iframe, h2, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+button{
+	cursor: pointer;
+}
+
+/* header */
+header h2{
+	background: #5D1707;
+	color: white;
+	font-size: 35px;
+	padding-left: 25px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+/* topbar */
+topbar .grid {
+	text-align:left;
+	width: 100%;
+	background: black;
+	text-align: left;
+	padding: 3px;
+	margin: 0;
+}
+
+topbar a{
+	color: white;
+	text-decoration:none;
+	text-align: left;
+}
+
+topbar .menu {
+	width:100%;
+	text-align: center;
+	font-weight: 200;
+	line-height:30px;
+}
+
+.menu a{
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	line-height: inherit;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.menu-item{
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	text-decoration:none;
+	margin-left: 30px;
+}
+
+.menu-item:hover {
+	background-color: #9B290F;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus .submenu{
+	display: block;
+   	z-index: 9999999
+}
+
+/* nav */
+nav{
+	width: 100%;
+}
+nav ul{
+	list-style: none;
+	height: 56px;
+	background-color: rgb(13, 11, 9);
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+nav li{
+	float: left;
+	margin-right: 30px;
+	margin-top: 16px;
+	text-align: center;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter",  monospace;
+	font-weight: bold;
+}
+nav a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #BBB;
+}
+nav a:hover{
+	color:white;
+}
+
+/* content */
+.container{
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+h1{
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+/* about */
+
+/* clips */
+.videos{
+	text-align: center;
+}
+.vid{
+	display: none;
+}
+
+.videoButton{
+	text-align: center;
+}
+
+.indieBut{
+	height: 50px;
+	width: 48.8%;
+}
+
+/* reddit get posts */
+.padded {
+	padding: 10px;
+}
+.post {
+	padding: 4px;
+	text-align: center;
+	margin: 4px;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* gallery */
+.pics{
+	display: grid;
+	grid-auto-columns: auto auto auto;
+	grid-auto-rows: auto 500px auto auto;
+}
+img{
+	width: 100%;
+
+}
+.banner{
+	grid-column: span 3;
+	grid-row: 1;
+}
+.ver1{
+	grid-column: 1;	
+	grid-row:  2;
+	width: 100%;
+	height: 100%;
+}
+.ver2{
+	grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+	height: 100%;
+}
+.ver3{
+	grid-column: 3;
+	grid-row:  2 ;
+	height: 100%;
+}
+.hor{
+	grid-column:  2 / span 2;
+	grid-row: 3;
+}
+.horle{
+	grid-column:  1;
+	grid-row: 3;
+	height: 100%;
+}
+.footer{
+	grid-column: span 4;
+	grid-row: 4;
+}
+
+/* audio player */
+.audio{
+	display: none;
+	/* can show control if delete this line */
+}
+
+/* top button */
+.backToTop{
+	width: 40px;
+	height: 40px;
+	border: grey;
+	box-shadow: #ffd303;
+	border-radius: 36px;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	opacity: 0.3;
+}
+
+/* copyright */
+bottom .grid{
+	background: #5D1707;
+	padding: 10px 40px;
+}
+
+bottom h3{
+	text-align:center;
+	color:white;
+	font-size: 10px;
+	padding: 5px;
+}
+
+bottom a{
+	color: #ffd303;
+}
+
+/* small screen */
+@media screen and (max-width: 768px) {
+	header .grid{
+	 	grid-template-columns:100%;
+	  }
+	  
+	header h2{
+	  	text-align: center;
+	}
+
+	header p{
+	  	text-align: center;
+	}
+
+	topbar .grid{
+	  	grid-template-columns:repeat(1, 1fr);
+	}
+	
+	topbar .menu-item {
+		display: block;
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
