@@ -94,7 +94,7 @@ $(document).ready(function () {
 			audio.pause()
 			$("#audioBut").html("Play");
 		} else {
-			audio.volume = 0.1;
+			audio.volume = 1;
 			//uncomment this, button will restart instead of resume music
 			// audio.currentTime = 0;
 			audio.play();
