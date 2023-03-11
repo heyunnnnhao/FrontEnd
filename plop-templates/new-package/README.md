@@ -1,0 +1,1 @@
+# @hyhScripts/{{pluginName}}
