@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "heyunnnnhao",
   "license": "MIT",
-  "dependencies": {
-    "plop": "^3.1.2"
-  }
+  "dependencies": {}
 }
